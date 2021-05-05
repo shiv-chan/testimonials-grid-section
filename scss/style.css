@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf2f8;
+}
+
+.card {
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.card .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card .name img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border-width: 2px;
+  border-style: solid;
+  margin-right: 1rem;
+}
+
+.card .name h1 {
+  color: white;
+}
+
+.card .name h1 span {
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+}
+
+.card .highlight-text {
+  color: white;
+  font-size: 18px;
+  margin: 0.8rem auto;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+
+.card .main-text {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 20px;
+}
+
+#daniel {
+  background-color: #7541c8;
+  background-image: url(/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 0;
+}
+
+#daniel .name img {
+  border-color: rgba(236, 242, 248, 0.5);
+}
+
+#jonathan {
+  background-color: #48556a;
+}
+
+#jonathan .name img {
+  border-color: rgba(236, 242, 248, 0.5);
+}
+
+#jeanette,
+#kira {
+  background-color: white;
+}
+
+#jeanette .name img,
+#kira .name img {
+  border-color: rgba(207, 207, 207, 0.5);
+}
+
+#jeanette .name h1,
+#kira .name h1 {
+  color: #cfcfcf;
+}
+
+#jeanette .name h1 span,
+#kira .name h1 span {
+  color: rgba(207, 207, 207, 0.5);
+}
+
+#jeanette .highlight-text,
+#kira .highlight-text {
+  color: #48556a;
+  width: 85%;
+  margin: 0.8rem auto 0.8rem 0;
+}
+
+#jeanette .main-text,
+#kira .main-text {
+  color: #cfcfcf;
+  line-height: 19px;
+}
+
+#patrick {
+  background-color: #19212e;
+  padding: 1.5rem;
+}
+
+#patrick .highlight-text {
+  margin: 1rem auto 1.8rem 0;
+}
+
+.container {
+  width: 330px;
+  margin: 0;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1100px;
+    height: 572px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 280px 265px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template: 280px 265px/repeat(4, 1fr);
+    grid-gap: 30px 28px;
+    grid-auto-flow: dense;
+  }
+  .card {
+    height: 100%;
+  }
+  #daniel {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+  }
+  #jonathan {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+  }
+  #jeanette {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  #patrick {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+  }
+  #kira {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4 / 5;
+    grid-row: 1 / -1;
+  }
+}

@@ -1,0 +1,103 @@
+.card {
+	width: 100%;
+	padding: 2rem;
+	position: relative;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+
+	.name {
+		@include flex(row);
+		justify-content: flex-start;
+
+		img {
+			width: 30px;
+			height: 30px;
+			border-radius: 100%;
+			border-width: 2px;
+			border-style: solid;
+			margin-right: 1rem;
+		}
+
+		h1 {
+			color: $white;
+			span {
+				color: rgba($white, 0.5);
+				display: block;
+			}
+		}
+	}
+
+	.highlight-text {
+		color: $white;
+		font-size: 18px;
+		margin: 0.8rem auto;
+		line-height: 25px;
+		letter-spacing: 0.5px;
+	}
+
+	.main-text {
+		color: rgba($white, 0.7);
+		line-height: 20px;
+	}
+}
+
+#daniel {
+	background-color: $violet;
+	background-image: url(/images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: 85% 0;
+
+	.name {
+		img {
+			border-color: rgba($light-grayish-blue, 0.5);
+		}
+	}
+}
+
+#jonathan {
+	background-color: $dark-grayis-blue;
+
+	.name {
+		img {
+			border-color: rgba($light-grayish-blue, 0.5);
+		}
+	}
+}
+
+#jeanette,
+#kira {
+	background-color: $white;
+
+	.name {
+		img {
+			border-color: rgba($light-gray, 0.5);
+		}
+
+		h1 {
+			color: $light-gray;
+			span {
+				color: rgba($light-gray, 0.5);
+			}
+		}
+	}
+
+	.highlight-text {
+		color: $dark-grayis-blue;
+		width: 85%;
+		margin: 0.8rem auto 0.8rem 0;
+	}
+
+	.main-text {
+		color: $light-gray;
+		line-height: 19px;
+	}
+}
+
+#patrick {
+	background-color: $dark-blackish-blue;
+	padding: 1.5rem;
+
+	.highlight-text {
+		margin: 1rem auto 1.8rem 0;
+	}
+}
