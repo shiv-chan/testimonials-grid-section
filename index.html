@@ -15,34 +15,25 @@
 		<link rel="stylesheet" href="/scss/style.css" />
 
 		<title>Frontend Mentor | Testimonial Grid Section</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
 		<div class="container">
-			<div class="card" id="daniel">
-				<div class="name">
-					<img src="/images/image-daniel.jpg" alt="daniel" />
-					<h1>
-						Daniel Clifford
-						<span>Verified Graduate</span>
-					</h1>
-				</div>
-				<p class="highlight-text">
+			<article class="testimonial violet first quotation">
+				<section class="student">
+					<img
+						src="/images/image-daniel.jpg"
+						alt="daniel"
+						class="profile-img"
+					/>
+					<h2 class="name">Daniel Clifford</h2>
+					<h3 class="verified">Verified Graduate</h3>
+				</section>
+				<h1 class="highlight">
 					I received a job offer mid-course, and the subjects I learned were
 					current, if not more so, in the company I joined. I honestly feel I
 					got every penny’s worth.
-				</p>
-				<p class="main-text">
+				</h1>
+				<blockquote class="comment">
 					“ I was an EMT for many years before I joined the bootcamp. I’ve been
 					looking to make a transition and have heard some people who had an
 					amazing experience here. I signed up for the free intro course and
@@ -50,75 +41,82 @@
 					weeks was the best - and most grueling - time of my life. Since
 					completing the course, I’ve successfully switched careers, working as
 					a Software Engineer at a VR startup. ”
-				</p>
-			</div>
-			<div class="card" id="jonathan">
-				<div class="name">
-					<img src="/images/image-jonathan.jpg" alt="jonathan" />
-					<h1>
-						Jonathan Walters
-						<span>Verified Graduate</span>
-					</h1>
-				</div>
-				<p class="highlight-text">
+				</blockquote>
+			</article>
+
+			<article class="testimonial grayish-blue second">
+				<section class="student">
+					<img
+						src="/images/image-jonathan.jpg"
+						alt="jonathan"
+						class="profile-img"
+					/>
+					<h2 class="name">Jonathan Walters</h2>
+					<h3 class="verified">Verified Graduate</h3>
+				</section>
+				<h1 class="highlight">
 					The team was very supportive and kept me motivated
-				</p>
-				<p class="main-text">
+				</h1>
+				<blockquote class="comment">
 					“ I started as a total newbie with virtually no coding skills. I now
 					work as a mobile engineer for a big company. This was one of the best
 					investments I’ve made in myself. ”
-				</p>
-			</div>
-			<div class="card" id="jeanette">
-				<div class="name">
-					<img src="/images/image-jeanette.jpg" alt="jeanette" />
-					<h1>
-						Jeanette Harmon
-						<span>Verified Graduate</span>
-					</h1>
-				</div>
-				<p class="highlight-text">
-					An overall wonderful and rewarding experience
-				</p>
-				<p class="main-text">
+				</blockquote>
+			</article>
+
+			<article class="testimonial white forth">
+				<section class="student">
+					<img
+						src="/images/image-jeanette.jpg"
+						alt="jeanette"
+						class="profile-img"
+					/>
+					<h2 class="name">Jeanette Harmon</h2>
+					<h3 class="verified">Verified Graduate</h3>
+				</section>
+				<h1 class="highlight">An overall wonderful and rewarding experience</h1>
+				<blockquote class="comment">
 					“Thank you for the wonderful experience! I now have a job I really
 					enjoy, and make a good living while doing something I love.”
-				</p>
-			</div>
-			<div class="card" id="patrick">
-				<div class="name">
-					<img src="/images/image-patrick.jpg" alt="patrick" />
-					<h1>
-						Patrick Abrams
-						<span>Verified Graduate</span>
-					</h1>
-				</div>
-				<p class="highlight-text">
+				</blockquote>
+			</article>
+
+			<article class="testimonial blackish-blue fifth">
+				<section class="student">
+					<img
+						src="/images/image-patrick.jpg"
+						alt="patrick"
+						class="profile-img"
+					/>
+					<h2 class="name">Patrick Abrams</h2>
+					<h3 class="verified">Verified Graduate</h3>
+				</section>
+				<h1 class="highlight">
 					Awesome teaching support from TAs who did the bootcamp themselves.
 					Getting guidance from them and learning from their experiences was
 					easy.
-				</p>
-				<p class="main-text">
+				</h1>
+				<blockquote class="comment">
 					“ The staff seem genuinely concerned about my progress which I find
 					really refreshing. The program gave me the confidence necessary to be
 					able to go out in the world and present myself as a capable junior
 					developer. The standard is above the rest. You will get the personal
 					attention you need from an incredible community of smart and amazing
 					people. ”
-				</p>
-			</div>
-			<div class="card" id="kira">
-				<div class="name">
-					<img src="/images/image-kira.jpg" alt="kira" />
-					<h1>
-						Kira Whittle
-						<span>Verified Graduate</span>
-					</h1>
-				</div>
-				<p class="highlight-text">
+				</blockquote>
+			</article>
+
+			<article class="testimonial white third">
+				<section class="student">
+					<img src="/images/image-kira.jpg" alt="kira" class="profile-img" />
+					<h2 class="name">Kira Whittle</h2>
+					<h3 class="verified">Verified Graduate</h3>
+				</section>
+				<h1 class="highlight">
 					Such a life-changing experience. Highly recommended!
-				</p>
-				<p class="main-text">
+				</h1>
+				<!-- content / <blockquote> -->
+				<blockquote class="comment">
 					“ Before joining the bootcamp, I’ve never written a line of code. I
 					needed some structure from professionals who can help me learn
 					programming step by step. I was encouraged to enroll by a former
@@ -130,14 +128,36 @@
 					often referred to it during interviews as an example of my developent
 					experience. It certainly helped me land a job as a full-stack
 					developer after receiving multiple offers. 100% recommend! ”
-				</p>
-			</div>
+				</blockquote>
+			</article>
+
+			<!-- (仮)
+			<article id="daniel" class="testimonial">
+				<aside class="author">
+					<img
+						src="/images/image-daniel.jpg"
+						alt="Daniel Clifford"
+						class="avatar"
+					/>
+					<h1 class="name">Daniel Clifford</h1>
+					<h2 class="title">Verified Graduate</h2>
+				</aside>
+				<h1 class="highlight">
+					I received a job offer mid-course, and the subjects I learned were
+					current, if not more so, in the company I joined. I honestly feel I
+					got every penny’s worth.
+				</h1>
+				<blockquote class="comment">
+					“ I was an EMT for many years before I joined the bootcamp. I’ve been
+					looking to make a transition and have heard some people who had an
+					amazing experience here. I signed up for the free intro course and
+					found it incredibly fun! I enrolled shortly thereafter. The next 12
+					weeks was the best - and most grueling - time of my life. Since
+					completing the course, I’ve successfully switched careers, working as
+					a Software Engineer at a VR startup. ”
+				</blockquote>
+			</article>
+			-->
 		</div>
-		<!-- <div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Kaho Shibuya</a>.
-		</div> -->
 	</body>
 </html>
