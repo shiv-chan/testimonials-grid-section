@@ -1,103 +1,60 @@
-.card {
-	width: 100%;
-	padding: 2rem;
-	position: relative;
+.testimonial {
+	height: 100%;
 	border-radius: 10px;
-	margin-bottom: 2rem;
+	padding: 2rem;
+	box-shadow: 10px 10px 26px 0px rgba(191, 191, 191, 1);
 
-	.name {
-		@include flex(row);
-		justify-content: flex-start;
-
-		img {
+	.student {
+		.profile-img {
+			float: left;
 			width: 30px;
 			height: 30px;
 			border-radius: 100%;
 			border-width: 2px;
 			border-style: solid;
-			margin-right: 1rem;
-		}
-
-		h1 {
-			color: $white;
-			span {
-				color: rgba($white, 0.5);
-				display: block;
-			}
+			margin-right: 15px;
 		}
 	}
 
-	.highlight-text {
-		color: $white;
-		font-size: 18px;
+	.highlight {
+		clear: left;
+		font-size: 1.4rem;
 		margin: 0.8rem auto;
-		line-height: 25px;
-		letter-spacing: 0.5px;
+		line-height: 1.8rem;
+		word-spacing: 0.05rem;
 	}
 
-	.main-text {
-		color: rgba($white, 0.7);
-		line-height: 20px;
-	}
-}
-
-#daniel {
-	background-color: $violet;
-	background-image: url(/images/bg-pattern-quotation.svg);
-	background-repeat: no-repeat;
-	background-position: 85% 0;
-
-	.name {
-		img {
-			border-color: rgba($light-grayish-blue, 0.5);
-		}
-	}
-}
-
-#jonathan {
-	background-color: $dark-grayis-blue;
-
-	.name {
-		img {
-			border-color: rgba($light-grayish-blue, 0.5);
-		}
-	}
-}
-
-#jeanette,
-#kira {
-	background-color: $white;
-
-	.name {
-		img {
-			border-color: rgba($light-gray, 0.5);
-		}
-
-		h1 {
-			color: $light-gray;
-			span {
-				color: rgba($light-gray, 0.5);
-			}
-		}
+	.comment {
+		line-height: 1.4rem;
 	}
 
-	.highlight-text {
-		color: $dark-grayis-blue;
-		width: 85%;
-		margin: 0.8rem auto 0.8rem 0;
+	&.quotation {
+		background-image: url(/images/bg-pattern-quotation.svg);
+		background-repeat: no-repeat;
+		background-position: 85% 0;
 	}
 
-	.main-text {
-		color: $light-gray;
-		line-height: 19px;
+	&.violet {
+		background-color: $violet;
+		@include colorOpacity($white);
+		@include profileImage($light-grayish-blue);
 	}
-}
 
-#patrick {
-	background-color: $dark-blackish-blue;
-	padding: 1.5rem;
+	&.grayish-blue {
+		background-color: $dark-grayish-blue;
+		@include colorOpacity($white);
+		@include profileImage($light-grayish-blue);
+	}
 
-	.highlight-text {
-		margin: 1rem auto 1.8rem 0;
+	&.white {
+		background-color: $white;
+		@include colorOpacity($dark-grayish-blue);
+		@include profileImage($light-gray);
+	}
+
+	&.blackish-blue {
+		background-color: $dark-blackish-blue;
+		@include colorOpacity($white);
+		@include profileImage($light-grayish-blue);
 	}
 }
